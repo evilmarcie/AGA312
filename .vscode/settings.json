@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "M_LENTZ_AGA312_A1.sln"
+    "dotnet.defaultSolution": "AGA312.slnx"
 }
