@@ -1,9 +1,12 @@
 using UnityEngine;
+using TMPro;
+using TMPro.EditorUtilities;
 
 public class RandomNumberGenerator : MonoBehaviour
 {
 
-    int randomNumber;
+    [SerializeField]int randomNumber;
+    [SerializeField] TMP_Text displayNumber;
 
     void Update()
     {
@@ -13,8 +16,9 @@ public class RandomNumberGenerator : MonoBehaviour
         }        
     }
 
-    private void GenerateRandomNumber
+    public void GenerateRandomNumber()
     {
-        randomNumber = Random.Range 
+        randomNumber = Random.Range(0, 999);
+        displayNumber.text = randomNumber.ToString();
     }
 }
