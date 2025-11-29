@@ -5,15 +5,12 @@ using TMPro.EditorUtilities;
 public class RandomNumberGenerator : MonoBehaviour
 {
 
-    [SerializeField]int randomNumber;
+    public int randomNumber;
     [SerializeField] TMP_Text displayNumber;
 
-    void Update()
+    void Start()
     {
-        if (Input.anyKeyDown)
-        {
-            GenerateRandomNumber();
-        }        
+        GenerateRandomNumber();
     }
 
     public void GenerateRandomNumber()
